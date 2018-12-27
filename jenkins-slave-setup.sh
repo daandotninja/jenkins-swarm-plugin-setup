@@ -2,6 +2,7 @@
 
 ./swarm-client.config
 
+echo "$swarmversion"
 
 mkdir ~/swarmclient;
 
