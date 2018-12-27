@@ -1,5 +1,7 @@
 #!/bin/sh
 
+sudo chmod +x ./swarm-client.config 
+
 ./swarm-client.config
 
 echo "$swarmversion"
