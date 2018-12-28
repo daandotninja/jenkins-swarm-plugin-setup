@@ -6,12 +6,12 @@ source ./config.sh
 
 mkdir ~/swarmclient;
 
-curl  -O http://repo.jenkins-ci.org/releases/org/jenkins-ci/plugins/swarm-client/$swarmversion/swarm-client-$swarmversion.jar > ~/swarmclient/ 
+curl  -O http://repo.jenkins-ci.org/releases/org/jenkins-ci/plugins/swarm-client/$swarmversion/swarm-client-$swarmversion.jar > ~/swarmclient/swarm-client-$swarmversion.jar
 
 
 sudo cp ./config.sh  ~/swarmclient/config.sh
 
-sudo cp ./swam-client.service /etc/systemd/system/swam-client.service
+sudo cp ./swarm-client.service /etc/systemd/system/swarm-client.service
 
 sudo cp ./swarm-client.sh ~/swarmclient/swarm-client.sh
 
