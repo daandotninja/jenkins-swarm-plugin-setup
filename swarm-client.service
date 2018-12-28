@@ -4,11 +4,11 @@ Description=My Webapp Java REST Service
 User=ubuntu
 # The configuration file application.properties should be here:
 #change this to your workspace
-WorkingDirectory= /var/swarmclient/swarm-client
+WorkingDirectory= /usr/local/bin/swarmclient/swarm-client
 #path to executable. 
 #executable is a bash script which calls jar 
-ExecStart=/var/swarmclient/swarm-client.sh start
-ExecStop=/var/swarmclient/swarm-client.sh stop
+ExecStart=/usr/local/bin/swarmclient/swarm-client.sh start
+ExecStop=/usr/local/bin/swarmclient/swarm-client.sh stop
 SuccessExitStatus=143
 TimeoutStopSec=10
 Restart=on-failure
