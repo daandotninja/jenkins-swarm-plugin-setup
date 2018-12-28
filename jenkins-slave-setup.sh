@@ -1,6 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 
 source ./config.sh
+
+
 
 mkdir /usr/local/bin/swarmclient;
 
