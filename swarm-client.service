@@ -7,7 +7,7 @@ User=root
 WorkingDirectory= /usr/local/bin/swarmclient/
 #path to executable. 
 #executable is a bash script which calls jar 
-ExecStart=/usr/local/bin/swarmclient/swarm-client.sh
+ExecStart=/bin/bash /usr/local/bin/swarmclient/swarm-client.sh start
 ExecStop=/usr/local/bin/swarmclient/swarm-client.sh stop
 SuccessExitStatus=143
 TimeoutStopSec=10
