@@ -4,7 +4,7 @@ source ./config.sh
 
 mkdir /usr/local/bin/swarmclient;
 
-curl  -O http://repo.jenkins-ci.org/releases/org/jenkins-ci/plugins/swarm-client/${swarmversion}/swarm-client-${swarmversion}.jar > /usr/local/bin/swarmclient/swarm-client-${swarmversion}.jar
+curl  -O http://repo.jenkins-ci.org/releases/org/jenkins-ci/plugins/swarm-client/"$swarmversion"/swarm-client-"$swarmversion".jar > /usr/local/bin/swarmclient/swarm-client-"$swarmversion".jar
 
 
 sudo cp ./config.sh  /usr/local/bin/swarmclient/config.sh
