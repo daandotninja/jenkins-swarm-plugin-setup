@@ -6,8 +6,10 @@ User=root
 #change this to your workspace
 WorkingDirectory= /usr/local/bin/swarmclient/
 #path to executable. 
+Type=forking
 #executable is a bash script which calls jar 
-ExecStart=/bin/bash /usr/local/bin/swarmclient/swarm-client.sh
+ExecStart=/bin/bash /usr/local/bin/swarmclient/swarm-client.sh start
+KillMode=process
 SuccessExitStatus=143
 TimeoutStopSec=10
 Restart=on-failure
