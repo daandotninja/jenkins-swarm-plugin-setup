@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+username="swarm"
+password="test"
+master="https://jenkins.daan.ninja/"
+swarmversion="3.15"

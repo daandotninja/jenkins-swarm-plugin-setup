@@ -1,14 +1,15 @@
 #!/bin/sh
 
-sudo chmod +x ./swarm-client.config 
+source ./config.sh
 
-./swarm-client.config
 
-echo "$swarmversion"
 
 mkdir ~/swarmclient;
 
 curl -O ~/swarmclient/ http://repo.jenkins-ci.org/releases/org/jenkins-ci/plugins/swarm-client/$swarmversion/swarm-client-$swarmversion.jar
+
+
+sudo cp ./config.sh  ~/swarmclient/config.sh
 
 sudo cp ./swam-client.service /etc/systemd/system/swam-client.service
 
@@ -18,6 +19,6 @@ sudo chmod u+x ~/swarmclient/swarm-client.sh
 
 sudo systemctl daemon-reload
 sudo systemctl enable swarm-client.service
-sudo systemctl start swarm-client
+sudo systemctl start swarm-clien
 sudo systemctl status swarm-client
 sudo journalctl --unit=swarm-client
